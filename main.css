@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #5B4644;
+}
+
+body{
+    background-color: #ECD8CA;
+}
+
+header{
+    border-bottom: solid 2px #5B4644;
+    margin-bottom: 56px;
+}
+
+.navbar-brand h1{
+    font-size: 1.5rem;
+}
+
+.photo-list li{
+    display: inline;
+
+}
+
+.photo-list img{
+    height: 124px;
+    margin-bottom: 8px;
+}
+
+.photo-list a,
+.container a{
+    text-decoration: none;
+    color: #5B4644;
+    margin-top: 32px;
+}
+
+.photo-list a:hover,
+.container a:hover{
+    text-decoration: underline;
+}
+
+.confeiteira img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 124px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(129, 107, 107, 0.7);
+    border-radius: 8px;
+}
+
+footer{
+    background-color: #5B4644;
+    padding: 3px;
+}
+
+footer .final p{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.card{
+    margin-top: 16px;
+    background-color: #ECD8CA;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(129, 107, 107, 0.7);
+    margin-bottom: 36px;
+}
+
+.separador{
+    border-bottom: solid 2px #5B4644;
+    margin-bottom: 56px;
+}
+
+.separador2{
+    border-bottom: solid 2px #5B4644;
+    margin-bottom: 56px;
+}
+
+.redes{
+    margin-left: 124px;
+    margin-right: 126px;
+    margin-top: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+.redes img{
+    height: 48px;
+    margin-right: 8px;
+    margin-top: 16px;
+}
+
+form{
+    margin-left: 124px;
+    margin-right: 64px;
+    margin-top: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+form input,
+form textarea,
+form button{
+    width: 100%;
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    background-color: #5B4644;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #9a7976;
+}
+
+input:focus, textarea:focus{
+    outline-color: #5B4644;
+}
+
+.card h4,
+.card header{
+    color: #5B4644;
+}
+
+/*Configuração Vendas de Bolos e Personalizados*/
+.cakeSales p,
+.personalized p{
+    font-size: 14px;
+}
+
+.quadro-bolos,
+.quadro-personalizado{
+    padding: 16px;
+    border: #5B4644 solid 2px;
+    border-radius: 10px;
+    margin-left: 12px;
+    margin-bottom: 32px;
+}
+
+.contentProd,
+.personalOrder{
+    color: #5B4644;
+    margin-left: 16px;
+}
+
+fieldset textarea{
+    resize: none;
+    height: 115px;
+}
+
+fieldset form{
+    margin-left: 24px;
+}
+
+#B-cenoura img,
+#cards-modal img,
+#B-abacaxi img{
+    height: 150px;
+}
+
+/*configuração do carrossel*/
+#carousel-bolos img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    margin-left: 32px;
+    border-radius: 10px;
+}
+
+#carousel-personalizados img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    border-radius: 10px;
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out;
+    object-fit: cover;
+}  
+
+.arabesco{
+    height: 900px;
+    opacity: 0.30;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1024px){
+
+    .separador2{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .confeiteira img{
+        max-width: 250px;
+    }
+
+    .arabesco,
+    .separador2{
+        display: none;
+    }
+
+    .redes, .form{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .confeiteira img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(129, 107, 107, 0.7);
+        border-radius: 8px;
+    }
+
+    form{
+        margin-left: 0;
+    }
+
+    form input,
+    form textarea,
+    form button{
+    width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .confeiteira img{
+        margin-left: 0;
+    }
+
+    .redes{
+        margin-left: 12px;
+    }
+
+    form{
+        margin-left: 12px;
+    }
+
+    form input,
+    form textarea,
+    form button{
+    width: 300px;
+    }
+
+    #carousel-bolos img{
+        height: 200px;
+    }
+
+    #carousel-personalizados img{
+        height: 200px;
+        border-radius: 0;
+    }
+}
